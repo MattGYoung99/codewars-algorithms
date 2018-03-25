@@ -3,11 +3,7 @@
 function solution (number) {
     let sum = 0;
     for (var x=1;x<number;x++) {
-        if (x % 5 === 0 && x % 3 === 0) {
-            sum += x;
-        } else if (x % 5 === 0) {
-            sum += x;
-        } else if (x % 3 === 0) {
+        if (x % 3 === 0 || x % 5) {
             sum += x;
         }
     }
@@ -15,3 +11,4 @@ function solution (number) {
 }
 
 console.log(solution(78));
+
